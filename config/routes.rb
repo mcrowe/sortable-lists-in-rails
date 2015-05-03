@@ -54,5 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  resources :faqs
+  resources :faqs do
+    post :sort, on: :collection
+  end
 end
